@@ -1,0 +1,47 @@
+/* SECCIÓN EQUIPO (Persona 2) */
+
+.seccion-equipo {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion-equipo h2 {
+    margin-bottom: 30px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+}
+
+.tarjeta-integrante {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px; 
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 15px;
+    background-color: #ccc; 
+}
+
+.tarjeta-integrante h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+}
+
+.tarjeta-integrante .rol {
+    color: #666;
+    font-style: italic;
+    margin: 0;
+}
