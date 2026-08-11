@@ -22,14 +22,78 @@
     <main>
 
         <!-- HU-2: Integrantes -->
-        <section id="equipo">
-            <!-- Aquí se desarrollarán las tarjetas de los 5 integrantes -->
-        </section>
+        <section id="equipo" class="seccion-equipo">
+        <h2>Conoce a nuestro equipo</h2>
+        <div class="contenedor-tarjetas">
+            
+            <!-- Tarjeta 1 -->
+            <div class="tarjeta-integrante">
+                <img src="img/sofia.jpg" alt="Foto de Sofía Jimena" class="foto-perfil">
+                <h3>Sofía Jimena Paiz Sagastume</h3>
+                <p class="rol">Desarrollador Web</p>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="tarjeta-integrante">
+                <img src="img/jose_ricardo.jpg" alt="Foto de José Ricardo" class="foto-perfil">
+                <h3>José Ricardo Guerra Morales</h3>
+                <p class="rol">Desarrollador Web</p>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="tarjeta-integrante">
+                <img src="img/jose_javier.jpg" alt="Foto de José Javier" class="foto-perfil">
+                <h3>José Javier Gregorio Corado</h3>
+                <p class="rol">Desarrollador Web</p>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="tarjeta-integrante">
+                <img src="img/guillermo.jpg" alt="Foto de Guillermo Neftalí" class="foto-perfil">
+                <h3>Guillermo Neftalí Contreras Bautista</h3>
+                <p class="rol">Desarrollador Web</p>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="tarjeta-integrante">
+                <img src="img/esdras.jpg" alt="Foto de Esdras David" class="foto-perfil">
+                <h3>Esdras David Santiago Alvarado</h3>
+                <p class="rol">Desarrollador Web</p>
+            </div>
+
+        </div>
+    </section>
 
 
         <!-- HU-3: Nuestro proyecto -->
-        <section id="proyecto">
-            <!-- Aquí se desarrollará la descripción y tecnologías -->
+        <section id="proyecto" aria-labelledby="proyecto-titulo">
+            <div class="proyecto-contenido">
+                <p class="proyecto-etiqueta">Qué hacemos</p>
+
+                <h2 id="proyecto-titulo">Nuestro proyecto</h2>
+
+                <p class="proyecto-descripcion">
+                    Creamos una landing page para presentar a nuestro equipo de trabajo,
+                    dar a conocer nuestro proyecto y facilitar que las personas puedan
+                    conectar con nosotros.
+                </p>
+
+                <div class="proyecto-tecnologias" aria-labelledby="tecnologias-titulo">
+                    <h3 id="tecnologias-titulo">Tecnologías</h3>
+
+                    <ul class="lista-tecnologias" aria-label="Tecnologías utilizadas en el proyecto">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+
+                <!-- Quitar el atributo hidden y agregar el nombre para mostrar al dueño. -->
+                <p class="proyecto-dueno" hidden>
+                    <strong>Dueño:</strong> <span class="proyecto-dueno-nombre"></span>
+                </p>
+            </div>
         </section>
 
     </main>
