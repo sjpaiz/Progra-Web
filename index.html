@@ -28,8 +28,34 @@
 
 
         <!-- HU-3: Nuestro proyecto -->
-        <section id="proyecto">
-            <!-- Aquí se desarrollará la descripción y tecnologías -->
+        <section id="proyecto" aria-labelledby="proyecto-titulo">
+            <div class="proyecto-contenido">
+                <p class="proyecto-etiqueta">Qué hacemos</p>
+
+                <h2 id="proyecto-titulo">Nuestro proyecto</h2>
+
+                <p class="proyecto-descripcion">
+                    Creamos una landing page para presentar a nuestro equipo de trabajo,
+                    dar a conocer nuestro proyecto y facilitar que las personas puedan
+                    conectar con nosotros.
+                </p>
+
+                <div class="proyecto-tecnologias" aria-labelledby="tecnologias-titulo">
+                    <h3 id="tecnologias-titulo">Tecnologías</h3>
+
+                    <ul class="lista-tecnologias" aria-label="Tecnologías utilizadas en el proyecto">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+
+                <!-- Quitar el atributo hidden y agregar el nombre para mostrar al dueño. -->
+                <p class="proyecto-dueno" hidden>
+                    <strong>Dueño:</strong> <span class="proyecto-dueno-nombre"></span>
+                </p>
+            </div>
         </section>
 
     </main>
