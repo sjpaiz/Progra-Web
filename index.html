@@ -14,10 +14,56 @@
 <body>
 
     <!-- HU-1: Encabezado e inicio -->
-    <header id="inicio">
-        <!-- Aquí se desarrollará el navbar, nombre y lema del equipo -->
-    </header>
+<header id="inicio" class="hero">
 
+    <nav class="navbar">
+    <a href="#inicio" class="logo">Equipo 2</a>
+
+    <ul class="navbar-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#proyecto">Proyecto</a></li>
+        <li><a href="#site-footer">Contacto</a></li>
+    </ul>
+
+    <button type="button" id="theme-toggle" class="theme-toggle"
+            aria-label="Cambiar entre tema claro y oscuro"
+            aria-pressed="false">
+
+        <svg class="icon icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path fill="currentColor"
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/>
+        </svg>
+
+        <svg class="icon icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.5" fill="currentColor"/>
+        </svg>
+
+        <span class="theme-toggle-label">Tema</span>
+    </button>
+</nav>
+
+    <div class="hero-contenido">
+        <span class="hero-etiqueta">Programación Web</span>
+
+        <h1>Landing Page — Equipo 2</h1>
+
+        <p>
+            Desarrollamos soluciones web utilizando HTML, CSS,
+            JavaScript y Git.
+        </p>
+
+        <div class="hero-botones">
+            <a href="#proyecto" class="btn-principal">
+                Ver proyecto
+            </a>
+
+            <a href="#equipo" class="btn-secundario">
+                Conocer al equipo
+            </a>
+        </div>
+    </div>
+</header>
 
     <main>
 
@@ -100,9 +146,123 @@
 
 
     <!-- HU-4: Contacto -->
-    <footer id="contacto">
-        <!-- Aquí se desarrollarán los enlaces y datos de contacto -->
-    </footer>
+      <footer class="site-footer" id="site-footer" data-animate>
+    <div class="footer-container">
+
+      <!-- Equipo: cada integrante con su GitHub y su correo propio -->
+      <nav class="footer-links" aria-label="Contacto del equipo">
+        <h3 class="footer-heading">Equipo</h3>
+        <ul class="team-list">
+
+          <li class="team-member">
+            <span class="team-name">Guillermo</span>
+            <div class="team-actions">
+              <a class="footer-link" href="https://github.com/Guille3002" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                  <path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.17c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a class="footer-link copy-email" href="mailto:gcontrerasbautista@gmail.com" data-email="gcontrerasbautista@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                  <path fill="currentColor" d="M3 5.5A1.5 1.5 0 0 1 4.5 4h15A1.5 1.5 0 0 1 21 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5v-13Zm2.2.5 6.8 5.44L18.8 6H5.2Zm13.8 1.6-6.5 5.2a1.5 1.5 0 0 1-1.86 0L4.99 7.6V18h14.01V7.6Z"/>
+                </svg>
+                <span>Correo</span>
+              </a>
+              <span class="copy-feedback" role="status" aria-live="polite"></span>
+            </div>
+          </li>
+
+          <li class="team-member">
+            <span class="team-name">Sofía</span>
+            <div class="team-actions">
+              <a class="footer-link" href="https://github.com/sjpaiz" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                  <path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.17c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a class="footer-link copy-email" href="mailto:sofiapaiz68@gmail.com" data-email="sofiapaiz68@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                  <path fill="currentColor" d="M3 5.5A1.5 1.5 0 0 1 4.5 4h15A1.5 1.5 0 0 1 21 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5v-13Zm2.2.5 6.8 5.44L18.8 6H5.2Zm13.8 1.6-6.5 5.2a1.5 1.5 0 0 1-1.86 0L4.99 7.6V18h14.01V7.6Z"/>
+                </svg>
+                <span>Correo</span>
+              </a>
+              <span class="copy-feedback" role="status" aria-live="polite"></span>
+            </div>
+          </li>
+
+          <li class="team-member">
+            <span class="team-name">Javier</span>
+            <div class="team-actions">
+              <a class="footer-link" href="https://github.com/javiergre" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                  <path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.17c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a class="footer-link copy-email" href="mailto:javigrego06@gmail.com" data-email="javigrego06@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                  <path fill="currentColor" d="M3 5.5A1.5 1.5 0 0 1 4.5 4h15A1.5 1.5 0 0 1 21 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5v-13Zm2.2.5 6.8 5.44L18.8 6H5.2Zm13.8 1.6-6.5 5.2a1.5 1.5 0 0 1-1.86 0L4.99 7.6V18h14.01V7.6Z"/>
+                </svg>
+                <span>Correo</span>
+              </a>
+              <span class="copy-feedback" role="status" aria-live="polite"></span>
+            </div>
+          </li>
+
+          <li class="team-member">
+            <span class="team-name">Santiago</span>
+            <div class="team-actions">
+              <a class="footer-link" href="https://github.com/santiagoesdras" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                  <path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.17c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a class="footer-link copy-email" href="mailto:santiagoesdras501@gmail.com" data-email="santiagoesdras501@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                  <path fill="currentColor" d="M3 5.5A1.5 1.5 0 0 1 4.5 4h15A1.5 1.5 0 0 1 21 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5v-13Zm2.2.5 6.8 5.44L18.8 6H5.2Zm13.8 1.6-6.5 5.2a1.5 1.5 0 0 1-1.86 0L4.99 7.6V18h14.01V7.6Z"/>
+                </svg>
+                <span>Correo</span>
+              </a>
+              <span class="copy-feedback" role="status" aria-live="polite"></span>
+            </div>
+          </li>
+
+          <li class="team-member">
+            <span class="team-name">Ricardo</span>
+            <div class="team-actions">
+              <a class="footer-link" href="https://github.com/ricardoguerr" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                  <path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.17c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a class="footer-link copy-email" href="mailto:jrguerram457@gmail.com" data-email="jrguerram457@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                  <path fill="currentColor" d="M3 5.5A1.5 1.5 0 0 1 4.5 4h15A1.5 1.5 0 0 1 21 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5v-13Zm2.2.5 6.8 5.44L18.8 6H5.2Zm13.8 1.6-6.5 5.2a1.5 1.5 0 0 1-1.86 0L4.99 7.6V18h14.01V7.6Z"/>
+                </svg>
+                <span>Correo</span>
+              </a>
+              <span class="copy-feedback" role="status" aria-live="polite"></span>
+            </div>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-meta">
+      <p>&copy; <span id="current-year"></span> Equipo 2.</p>
+    </div>
+
+    <button type="button" id="scroll-top" class="scroll-top" aria-label="Volver arriba" title="Volver arriba">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+        <path fill="currentColor" d="M12 5.5 5 12.5l1.41 1.41L11 9.33V19h2V9.33l4.59 4.58L19 12.5 12 5.5Z"/>
+      </svg>
+    </button>
+  </footer>
 
 
     <!-- JavaScript -->
